@@ -1,8 +1,8 @@
-﻿using log4net;
+﻿using Common;
+using log4net;
 using log4net.Config;
 using System.IO;
 using System.Reflection;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace XmlConfiguration
@@ -28,20 +28,8 @@ namespace XmlConfiguration
             XmlConfigurator.Configure(repo, new FileInfo(configFIlename));
             var logger = LogManager.GetLogger(typeof(Program));
 
-            Task.Run(() => logger.Debug("Debug"));
-            Thread.Sleep(1000);
-
-            Task.Run(() => logger.Info("Info"));
-            Thread.Sleep(1000);
-
-            Task.Run(() => logger.Warn("Warn"));
-            Thread.Sleep(1000);
-
-            Task.Run(() => logger.Error("Error"));
-            Thread.Sleep(1000);
-
-            Task.Run(() => logger.Fatal("Fatal"));
-            Thread.Sleep(1000);
+            Task[] tasks = Util.LoggingDemoWithInterval(logger, 500);
+            Task.WaitAll(tasks);
         }
     }
 }

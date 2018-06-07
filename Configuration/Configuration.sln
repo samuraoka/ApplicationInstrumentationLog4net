@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_GuiApplication", "4_GuiAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5_ConfigureInCode", "5_ConfigureInCode\5_ConfigureInCode.csproj", "{E61D5DFB-5168-46BD-AD99-3EB9F249B888}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{A5AA2A3F-92F7-4BF3-A56E-77FF562F270E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{E61D5DFB-5168-46BD-AD99-3EB9F249B888}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E61D5DFB-5168-46BD-AD99-3EB9F249B888}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E61D5DFB-5168-46BD-AD99-3EB9F249B888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5AA2A3F-92F7-4BF3-A56E-77FF562F270E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5AA2A3F-92F7-4BF3-A56E-77FF562F270E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5AA2A3F-92F7-4BF3-A56E-77FF562F270E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5AA2A3F-92F7-4BF3-A56E-77FF562F270E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
