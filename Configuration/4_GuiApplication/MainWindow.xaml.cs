@@ -10,6 +10,8 @@ namespace GuiApplication
         public MainWindow()
         {
             InitializeComponent();
+
+            App.Logger.Debug("MainWindow has initialized.");
         }
     }
 }
