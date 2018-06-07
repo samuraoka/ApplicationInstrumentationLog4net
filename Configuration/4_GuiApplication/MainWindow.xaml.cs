@@ -1,4 +1,6 @@
-﻿using System.Windows;
+﻿using System;
+using System.ComponentModel;
+using System.Windows;
 
 namespace GuiApplication
 {
@@ -11,7 +13,25 @@ namespace GuiApplication
         {
             InitializeComponent();
 
+            Closing += OnClosingLogging;
+            Closed += OnClosedLogging;
+
             App.Logger.Debug("MainWindow has initialized.");
+        }
+
+        private void OnClosedLogging(object sender, EventArgs e)
+        {
+            Logging("Closed");
+        }
+
+        private void OnClosingLogging(object sender, CancelEventArgs e)
+        {
+            Logging("Closing");
+        }
+
+        private void Logging(string message)
+        {
+            App.Logger.Debug("MainWindow: " + message);
         }
     }
 }
