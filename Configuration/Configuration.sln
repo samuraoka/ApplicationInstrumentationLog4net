@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2_XmlConfiguration", "2_Xml
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3_AssemblyAttribute", "3_AssemblyAttribute\3_AssemblyAttribute.csproj", "{C1DF1C38-907C-456C-B1D5-2F3F0D04728C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4_GuiApplication", "4_GuiApplication\4_GuiApplication.csproj", "{D7E562C9-DE44-450A-868E-FDF063366078}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C1DF1C38-907C-456C-B1D5-2F3F0D04728C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C1DF1C38-907C-456C-B1D5-2F3F0D04728C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C1DF1C38-907C-456C-B1D5-2F3F0D04728C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7E562C9-DE44-450A-868E-FDF063366078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7E562C9-DE44-450A-868E-FDF063366078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7E562C9-DE44-450A-868E-FDF063366078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7E562C9-DE44-450A-868E-FDF063366078}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
